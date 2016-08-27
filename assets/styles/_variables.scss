@@ -19,8 +19,8 @@ $gray-5: #222222;
 $space:                20px;
 $space-small:          ($space / 2);
 $space-medium:         ($space * 1.5);
-$space-large:          ($space * 2);
-$space-extra-large:    ($space * 4);
+$space-large:          ($space * 3);
+$space-extra-large:    ($space * 5);
 
 
 /**
@@ -48,22 +48,20 @@ $screen-large-max: ($screen-extra-large -1);
 /**
  * Type
  */
-$font-size-base: 1.6rem; // ~16px
-$font-size-small: 1.4rem; // ~14px
-$font-size-content: 2rem; // ~18px
-$font-size-large: 2rem; // ~20px
+$font-size-base: 2.2rem;   // ~22px
+$font-size-small: 1.6rem;  // ~16px
+$font-size-medium: 2.4rem; // ~24px
+$font-size-large: 2.6rem;  // ~26px
 
 $line-height-base: 1.6;
 $line-height-large: 2;
 $line-height-small: 1.4;
 
-$font-family-base: 'Vollkorn', serif;
-$font-family-headings: 'Pretzel', serif;
-$font-family-alt: 'Andralis', serif;
+$font-family-base: 'adobe-caslon-pro', serif;
 
 $text-color-base: $gray-3;
 
-/***
+/**
  * Layouts
  */
 // Alert Bar

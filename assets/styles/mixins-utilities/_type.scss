@@ -1,3 +1,6 @@
+/**
+ * Global Type Styles
+ */
 // Reset HTML
 html {
   font-size: 62.5%;
@@ -15,4 +18,18 @@ body {
 
 small {
   font-size: 85%;
+}
+
+/**
+ * Fonts
+ */
+.font-adobe-caslon-pro {
+  font-family: "adobe-caslon-pro";
+}
+
+/**
+ * Font Weights
+ */
+.type-semibold {
+  font-weight: 600;
 }
