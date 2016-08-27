@@ -1,0 +1,18 @@
+// Reset HTML
+html {
+  font-size: 62.5%;
+}
+
+// Base font-size is 16px
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+small {
+  font-size: 85%;
+}

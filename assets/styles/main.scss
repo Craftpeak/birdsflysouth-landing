@@ -1,3 +1,8 @@
+/**
+ * Project Variables
+ */
+@import 'variables';
+
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
@@ -5,39 +10,11 @@
 // endbower
 
 /**
- * Variables
+ * Mixins/Utilities
  */
-
-$blue: #139bab;
-
-/**
- * Utilities/Mixins
- */
+@import 'mixins-utilities/type';
 
 /**
  * Styles
  */
-
-body {
-  font-family: "arial", sans-serif;
-}
-.wrapper {
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-}
-.main {
-  max-width: 600px;
-  text-align: center;
-}
-.logo {
-  height: auto;
-  width: 100%;
-}
-.info {
-  padding: 0 10px 10px;
-}
-a {
-  color: $blue;
-}
+@import 'layouts/global';

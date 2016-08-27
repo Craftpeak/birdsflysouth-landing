@@ -1,0 +1,71 @@
+/**
+ * Colors
+ */
+
+// Actual Colors
+$blue: #139bab;
+$red: #ff6160;
+
+// Grays
+$gray-1: #e5e5e5;
+$gray-2: #afafaf;
+$gray-3: #666666;
+$gray-4: #4c4c4c;
+$gray-5: #222222;
+
+/**
+ * Spacing
+ */
+$space:                20px;
+$space-small:          ($space / 2);
+$space-medium:         ($space * 1.5);
+$space-large:          ($space * 2);
+$space-extra-large:    ($space * 4);
+
+
+/**
+ * Media Queries
+ */
+
+$screen-tiny: 600px;
+$screen-small: 768px;
+$screen-medium: 960px;
+$screen-large: 1200px;
+$screen-extra-large: 1600px;
+
+// Min screen sizes
+$screen-medium-min: ($screen-small + 1);
+$screen-large-min: ($screen-medium + 1);
+$screen-extra-large-min: ($screen-large + 1);
+
+// Max screen sizes
+$screen-tiny-max: ($screen-tiny - 1);
+$screen-extra-small-max: ($screen-small - 1);
+$screen-small-max: ($screen-medium - 1);
+$screen-medium-max: ($screen-large - 1);
+$screen-large-max: ($screen-extra-large -1);
+
+/**
+ * Type
+ */
+$font-size-base: 1.6rem; // ~16px
+$font-size-small: 1.4rem; // ~14px
+$font-size-content: 2rem; // ~18px
+$font-size-large: 2rem; // ~20px
+
+$line-height-base: 1.6;
+$line-height-large: 2;
+$line-height-small: 1.4;
+
+$font-family-base: 'Vollkorn', serif;
+$font-family-headings: 'Pretzel', serif;
+$font-family-alt: 'Andralis', serif;
+
+$text-color-base: $gray-3;
+
+/***
+ * Layouts
+ */
+// Alert Bar
+$alert-bar-height: 60px;
+$alert-bar-height-large: 80px;
