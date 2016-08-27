@@ -14,6 +14,7 @@
  */
 @import 'mixins-utilities/type';
 @import 'mixins-utilities/center-contents';
+@import 'mixins-utilities/clearfix';
 
 /**
  * Styles
@@ -21,3 +22,4 @@
 @import 'layouts/global';
 @import 'layouts/alert-bar';
 @import 'layouts/new-site';
+@import 'layouts/footer';

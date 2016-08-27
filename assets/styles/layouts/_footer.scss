@@ -1,0 +1,36 @@
+.footer {
+  background: $gray-5;
+  font-size: $font-size-small;
+  padding: $space-medium $space-small;
+
+  .copy, .hashtag {
+    margin-bottom: $space-small;
+  }
+  .copy {}
+  .hashtag {
+    color: $gray-2;
+  }
+
+  @include min-screen($screen-medium-min) {
+    @include clearfix();
+    padding: $space-large;
+    position: relative;
+
+    .copy, .hashtag {
+      margin-bottom: 0;
+    }
+    .copy {
+      float: left;
+    }
+    .hashtag {
+      float: right;
+    }
+    .bird {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -26px;
+      margin-left: -28px;
+    }
+  }
+}

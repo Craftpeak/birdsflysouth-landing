@@ -15,6 +15,6 @@
   }
 
   @include min-screen($screen-medium-min) {
-    height: $alert-bar-height-large;
+    height: $alert-bar-height-medium;
   }
 }
