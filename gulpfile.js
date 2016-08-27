@@ -153,8 +153,6 @@ gulp.task('styles', ['wiredep'], function() {
     merged.add(gulp.src(dep.globs, {base: 'styles'})
       .pipe(cssTasksInstance));
   });
-  return merged
-    .pipe(writeToManifest('styles'));
 });
 
 // ### Scripts
@@ -168,8 +166,6 @@ gulp.task('scripts', ['jshint'], function() {
         .pipe(jsTasks(dep.name))
     );
   });
-  return merged
-    .pipe(writeToManifest('scripts'));
 });
 
 // ### Fonts
