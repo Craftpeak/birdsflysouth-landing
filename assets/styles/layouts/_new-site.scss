@@ -1,0 +1,21 @@
+.new-site {
+  @include center-contents();
+  background-image: url('../images/bg-birds.jpg');
+  background-position: right bottom;
+  background-size: cover;
+  min-height: 50vh;
+  padding: $space-small;
+
+  .text {
+    color: $gray-4;
+    font-size: $font-size-large;
+  }
+
+  @include min-screen($screen-medium-min) {
+    background-position: center bottom;
+
+    .text {
+      font-size: $font-size-extra-large;
+    }
+  }
+}

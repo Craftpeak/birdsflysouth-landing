@@ -13,9 +13,11 @@
  * Mixins/Utilities
  */
 @import 'mixins-utilities/type';
+@import 'mixins-utilities/center-contents';
 
 /**
  * Styles
  */
 @import 'layouts/global';
 @import 'layouts/alert-bar';
+@import 'layouts/new-site';

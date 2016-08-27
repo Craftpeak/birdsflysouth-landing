@@ -1,12 +1,9 @@
 .alert-bar {
   @extend .type-semibold;
-  align-items: center;
+  @include center-contents();
   background: $gray-5;
-  display: flex;
   height: $alert-bar-height;
-  justify-content: center;
   padding: $space-small;
-  text-align: center;
 
   .event-link {
     color: $red;
