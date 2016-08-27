@@ -1,0 +1,41 @@
+.instagram-feed {
+  background: $gray-5;
+
+  .tiles {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+
+    .tile {
+      align-items: center;
+      display: flex;
+      flex: 1;
+      max-width: 320px;
+      min-height: 100px;
+      min-width: 100px;
+
+      img {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+
+      &.instagram {
+        @include center-contents();
+        flex: 1;
+        max-width: none;
+
+        img {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+
+    &.loaded {
+      .tile.instagram {
+        max-width: 320px;
+      }
+    }
+  }
+}
