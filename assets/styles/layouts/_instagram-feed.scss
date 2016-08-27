@@ -10,7 +10,6 @@
       align-items: center;
       display: flex;
       flex: 1;
-      max-width: 320px;
       min-height: 100px;
       min-width: 100px;
 
@@ -29,12 +28,6 @@
           width: auto;
           height: auto;
         }
-      }
-    }
-
-    &.loaded {
-      .tile.instagram {
-        max-width: 320px;
       }
     }
   }
