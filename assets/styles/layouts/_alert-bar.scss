@@ -1,0 +1,23 @@
+.alert-bar {
+  @extend .type-semibold;
+  align-items: center;
+  background: $gray-5;
+  display: flex;
+  height: $alert-bar-height;
+  justify-content: center;
+  padding: $space-small;
+  text-align: center;
+
+  .event-link {
+    color: $red;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include min-screen($screen-medium-min) {
+    height: $alert-bar-height-large;
+  }
+}
