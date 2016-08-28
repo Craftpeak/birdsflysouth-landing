@@ -1,7 +1,6 @@
 /**
  * Colors
  */
-
 // Actual Colors
 $blue: #139bab;
 $red: #ff6160;
@@ -12,6 +11,9 @@ $gray-2: #afafaf;
 $gray-3: #666666;
 $gray-4: #4c4c4c;
 $gray-5: #222222;
+
+// Standard colors
+$white: #ffffff;
 
 /**
  * Spacing
@@ -26,7 +28,6 @@ $space-extra-large:    ($space * 5);
 /**
  * Media Queries
  */
-
 $screen-tiny: 600px;
 $screen-small: 768px;
 $screen-medium: 960px;
@@ -46,6 +47,7 @@ $screen-small-max: ($screen-medium - 1);
 $screen-medium-max: ($screen-large - 1);
 $screen-large-max: ($screen-extra-large -1);
 
+
 /**
  * Type
  */
@@ -62,6 +64,13 @@ $line-height-small: 1.4;
 $font-family-base: 'adobe-caslon-pro', serif;
 
 $text-color-base: $gray-3;
+
+/**
+ * Timing
+ */
+$easing: cubic-bezier(.93,0,.03,1);
+$transition-default: all 0.2s $easing;
+
 
 /**
  * Layouts
