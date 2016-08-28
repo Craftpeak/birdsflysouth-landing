@@ -3,9 +3,11 @@
  */
 // Actual Colors
 $blue: #139bab;
-$red: #ff6160;
+$red: #ff6f60;
+$red-active: #fb6f60;
 
 // Grays
+$gray-0: #f6f6f6;
 $gray-1: #e5e5e5;
 $gray-2: #afafaf;
 $gray-3: #666666;
@@ -14,6 +16,7 @@ $gray-5: #222222;
 
 // Standard colors
 $white: #ffffff;
+$danger-red: #eb3535;
 
 /**
  * Spacing
@@ -57,7 +60,7 @@ $font-size-medium: 2.4rem; // ~24px
 $font-size-large: 2.6rem;  // ~26px
 $font-size-extra-large: 3.0rem;  // ~30px
 
-$line-height-base: 1.6;
+$line-height-base: 1.666666667;
 $line-height-large: 2;
 $line-height-small: 1.4;
 
@@ -68,7 +71,7 @@ $text-color-base: $gray-3;
 /**
  * Timing
  */
-$easing: cubic-bezier(.93,0,.03,1);
+$easing: cubic-bezier(0.645, 0.045, 0.355, 1.000);
 $transition-default: all 0.2s $easing;
 
 
@@ -76,5 +79,5 @@ $transition-default: all 0.2s $easing;
  * Layouts
  */
 // Alert Bar
-$alert-bar-height: 60px;
-$alert-bar-height-medium: 80px;
+$alert-bar-height: 6.8rem;
+$alert-bar-height-medium: 8rem;
