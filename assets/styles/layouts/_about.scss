@@ -1,0 +1,30 @@
+.about {
+  background: none;
+
+  .about-photo {
+    @include clearfix();
+
+    img {
+      @extend .responsive-image;
+    }
+  }
+  .about-content {
+    text-align: left;
+  }
+
+  @include min-screen($screen-medium-min) {
+    display: flex;
+    position: relative;
+
+    .about-photo,
+    .about-content {
+      width: 50%;
+    }
+
+    .about-photo {
+      img {
+        float: right;
+      }
+    }
+  }
+}
