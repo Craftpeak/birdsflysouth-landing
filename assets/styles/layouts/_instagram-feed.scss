@@ -17,7 +17,13 @@
       img {
         display: block;
         height: auto;
+        transition: $transition-default;
+        backface-visibility: hidden;
         width: 100%;
+
+        &:hover {
+          opacity: .5;
+        }
       }
 
       &.instagram {
@@ -25,9 +31,19 @@
         flex: 1;
         max-width: none;
 
-        img {
-          width: auto;
-          height: auto;
+        .logo-instagram,
+        .logo-instagram path {
+          transition: $transition-default;
+        }
+
+        &:hover {
+          .logo-instagram {
+            transform: scale(1.1);
+
+            path {
+              fill: $red;
+            }
+          }
         }
       }
     }
