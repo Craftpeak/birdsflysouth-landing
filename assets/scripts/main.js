@@ -11,6 +11,16 @@ WebFont.load({
 });
 
 /**
+ * External Links
+ */
+var activateExternalLinks = function() {
+  var $links = $('a[rel="external"]');
+  $links.each(function(index, element) {
+    $(this).attr('target', '_external');
+  });
+};
+
+/**
  * Do stuff once the page has loaded!
  */
 $(document).ready(function() {
@@ -35,4 +45,5 @@ $(document).ready(function() {
   };
 
   loadInstagramTiles('.instagram-feed .tiles');
+  activateExternalLinks();
 });
