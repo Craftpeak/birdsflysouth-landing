@@ -1,6 +1,6 @@
 .content-box {
   color: $gray-4;
-  padding: $space-small;
+  padding: $space-medium $space-small;
 
   a:not(.icon-link) {
     color: $gray-3;
@@ -37,10 +37,17 @@
 
   .heading {
     @extend .font-open-sans-condensed;
-    font-weight: bold;
-    font-size: $font-size-small;
-    text-transform: uppercase;
     color: $gray-4;
+    font-size: $font-size-small;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: $space;
+    margin-top: 0;
+    text-transform: uppercase;
+
+    @include min-screen($screen-medium-min) {
+      margin-bottom: $space-medium;
+    }
   }
 
   .content-block {
@@ -56,8 +63,12 @@
   }
 
   @include min-screen($screen-large-min) {
-    padding-top: $space * 6;
-    padding-bottom: $space * 6;
+    padding-top: $space-extra-large;
+    padding-bottom: $space-extra-large;
+
+    .content-block {
+      margin-bottom: $space-extra-large;
+    }
   }
 
   .content-block:last-child {
