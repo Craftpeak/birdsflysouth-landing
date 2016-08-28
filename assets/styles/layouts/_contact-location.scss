@@ -7,14 +7,23 @@
     background: url('../images/bg-map.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
+
+    &::after {
+      @include min-screen($screen-medium-min) {
+        background: url('../images/bg-triangles.png') repeat-y left top;
+        background-size: 60px 25px;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 25px;
+      }
+    }
 
     .hours {
       width: 100%;
-
-      // .day,
-      // .time {
-      //   width: 100px;
-      // }
 
       .day {
         text-align: right;
@@ -24,6 +33,33 @@
       }
       .time {
         text-align: left;
+      }
+    }
+  }
+
+  .social-links {
+    .icon-link {
+      border-radius: 50%;
+      border: 2px solid $red;
+      display: inline-block;
+      height: 6rem;
+      line-height: 6.6rem;
+      margin: 0 1rem;
+      width: 6rem;
+      transition: $transition-default;
+
+      .icon {
+        fill: $red;
+        transition: $transition-default;
+      }
+
+      &:hover {
+        background-color: $red-active;
+        transform: scale(1.1);
+
+        .icon {
+          fill: $white;
+        }
       }
     }
   }
