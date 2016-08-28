@@ -1,0 +1,38 @@
+form {
+  input[type="text"],
+  input[type="email"] {
+    background-color: $gray-0;
+    border-radius: 2px;
+    border: 0;
+    border: 2px solid transparent;
+    font-size: 1.8rem;
+    height: 6rem;
+    line-height: 1;
+    outline: none;
+    padding: 7px 2rem 0;
+    transition: $transition-default;
+
+    &:hover {
+      background-color: $white;
+    }
+
+    &:focus {
+      border-color: $gray-2;
+    }
+  }
+}
+
+/**
+ * MailChimp Form
+ */
+#mc_embed_signup {
+  .mc-field-group {
+    margin-bottom: 1.6rem;
+
+    input,
+    button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
