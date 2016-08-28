@@ -1,0 +1,33 @@
+.events-brewing {
+  color: white;
+
+  .header {
+    color: white;
+  }
+
+  .events {
+    background-image: url('../images/bg-brewery.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .brewing {
+    background: $gray-5;
+  }
+
+  @include min-screen($screen-medium-min) {
+    display: flex;
+    position: relative;
+
+    .events,
+    .brewing {
+      width: 50%;
+      flex: 1;
+
+      // @TODO: Remove this!
+      min-height: 50vh;
+    }
+    .events {
+      background-position: left center;
+    }
+  }
+}
