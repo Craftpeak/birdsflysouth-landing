@@ -14,6 +14,7 @@ body {
   color: $text-color-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 small {
@@ -25,6 +26,9 @@ small {
  */
 .font-adobe-caslon-pro {
   font-family: "adobe-caslon-pro";
+}
+.font-open-sans-condensed {
+  font-family: "Open Sans Condensed";
 }
 
 /**

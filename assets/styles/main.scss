@@ -17,10 +17,16 @@
 @import 'mixins-utilities/clearfix';
 
 /**
- * Styles
+ * Components
+ */
+@import "components/content-box";
+
+/**
+ * Layouts
  */
 @import 'layouts/global';
 @import 'layouts/alert-bar';
 @import 'layouts/instagram-feed';
+@import 'layouts/contact-location';
 @import 'layouts/new-site';
 @import 'layouts/footer';

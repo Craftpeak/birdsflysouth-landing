@@ -1,0 +1,54 @@
+.contact-location {
+  .contact {
+    background: $gray-1;
+  }
+
+  .location {
+    background: url('../images/bg-map.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .hours {
+      width: 100%;
+
+      // .day,
+      // .time {
+      //   width: 100px;
+      // }
+
+      .day {
+        text-align: right;
+      }
+      .seperator {
+        color: $gray-2;
+      }
+      .time {
+        text-align: left;
+      }
+    }
+  }
+
+  .bird {
+    display: none;
+  }
+
+  @include min-screen($screen-medium-min) {
+    display: flex;
+    position: relative;
+
+    .contact,
+    .location {
+      width: 50%;
+      flex: 1;
+    }
+
+    .bird {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -142px;
+      margin-top: -120px;
+    }
+  }
+}

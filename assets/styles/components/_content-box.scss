@@ -1,0 +1,62 @@
+.content-box {
+  padding: $space-small;
+
+  color: $gray-4;
+
+  a {
+    color: $gray-3;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:after {
+      background: $red;
+      bottom: 5px;
+      content: '';
+      display: block;
+      height: 2px;
+      left: 0;
+      position: absolute;
+      transition: all 0.2s;
+      width: 100%;
+    }
+
+    &:hover {
+      color: $gray-4;
+
+      &:after {
+        bottom: 2px;
+      }
+    }
+  }
+
+  .heading {
+    @extend .font-open-sans-condensed;
+    font-weight: bold;
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    color: $gray-4;
+  }
+
+  .content-block {
+    margin-bottom: $space-medium;
+  }
+
+  @include min-screen($screen-medium-min) {
+    padding: $space-large;
+
+    .content-block {
+      margin-bottom: $space-large;
+    }
+  }
+
+  @include min-screen($screen-large-min) {
+    padding-top: $space * 6;
+    padding-bottom: $space * 6;
+  }
+
+  .content-block:last-child {
+    margin-bottom: 0;
+  }
+}
