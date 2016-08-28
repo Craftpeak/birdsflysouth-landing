@@ -29,7 +29,7 @@ $(document).ready(function() {
 
         $(container).addClass('loaded');
       } else {
-        console.log("Something went wrong!")
+        console.log("Something went wrong!");
       }
     });
   };
