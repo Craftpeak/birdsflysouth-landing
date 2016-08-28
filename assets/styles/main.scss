@@ -12,9 +12,10 @@
 /**
  * Mixins/Utilities
  */
-@import 'mixins-utilities/type';
 @import 'mixins-utilities/center-contents';
 @import 'mixins-utilities/clearfix';
+@import 'mixins-utilities/responsive-image';
+@import 'mixins-utilities/type';
 
 /**
  * Components
@@ -26,6 +27,7 @@
  */
 @import 'layouts/global';
 @import 'layouts/alert-bar';
+@import 'layouts/brand-newsletter';
 @import 'layouts/instagram-feed';
 @import 'layouts/contact-location';
 @import 'layouts/events-brewing';

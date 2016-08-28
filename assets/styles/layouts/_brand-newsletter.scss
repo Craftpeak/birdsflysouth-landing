@@ -1,0 +1,36 @@
+.brand-newsletter {
+  .brand {
+    .logo-wrap {
+      max-width: 375px;
+      margin: 0 auto;
+      padding: $space-medium;
+
+      .logo {
+        @extend .responsive-image;
+        margin-bottom: $space-medium;
+      }
+    }
+  }
+
+  .newsletter {
+    background: $gray-1;
+  }
+
+  @include min-screen($screen-medium-min) {
+    display: flex;
+    position: relative;
+
+    .brand,
+    .newsletter {
+      width: 50%;
+    }
+  }
+  @include min-screen($screen-large-min) {
+    .brand {
+      width: 65%;
+    }
+    .newsletter {
+      width: 35%;
+    }
+  }
+}
