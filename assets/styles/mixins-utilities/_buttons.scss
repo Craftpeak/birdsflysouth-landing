@@ -1,0 +1,42 @@
+.button {
+  @extend .type-semibold;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 2px solid $red;
+  color: $red;
+  font-size: 1.8rem;
+  height: 6rem;
+  line-height: 1;
+  outline: none;
+  padding: 7px 2rem 0;
+  position: relative;
+  text-align: center;
+  transition: $transition-default;
+
+  // Hidden bar that expands from bottom on hover
+  &::after {
+    background-color: $red;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transition: $transition-default;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $red-active;
+    background-color: $red-active;
+    color: $white;
+    cursor: pointer;
+    z-index: 1;
+
+    &::after {
+      height: 100%;
+      z-index: -1;
+    }
+  }
+}
