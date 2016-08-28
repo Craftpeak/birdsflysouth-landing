@@ -8,13 +8,21 @@
   .event-link {
     color: $red;
     display: block;
-    text-decoration: none;
+    font-size: $font-size-small;
+    max-width: 30rem;
+    padding: 6px 8px 0;
     position: relative;
-    padding: 0 .4rem;
+    text-decoration: none;
     transition: $transition-default;
+
+    @include min-screen($screen-tiny-min) {
+      font-size: $font-size-base;
+      max-width: 100%;
+    }
 
     &:after {
       background: transparent;
+      border-radius: 2px;
       bottom: 0;
       content: '';
       display: block;
@@ -30,7 +38,7 @@
       z-index: 1;
 
       &:after {
-        background: $red;
+        background: $red-active;
         height: 100%;
         z-index: -1;
       }
