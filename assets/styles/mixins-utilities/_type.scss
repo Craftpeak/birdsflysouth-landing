@@ -6,15 +6,18 @@ html {
   font-size: 62.5%;
 }
 
-// Base font-size is 16px
 body {
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-  color: $text-color-base;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $text-color-base;
+  font-family: $font-family-base;
+  font-size: 1.8rem;
+  line-height: $line-height-base;
   text-align: center;
+
+  @include mq($min-width: $screen-tiny-min) {
+    font-size: $font-size-base;
+  }
 }
 
 small {
@@ -40,4 +43,22 @@ h1, h2, h3, h4, h5, h6 {
  */
 .type-semibold {
   font-weight: 600;
+}
+
+/**
+ * Tel links don't get styled
+ */
+body a[href^="tel:"] {
+  color: inherit;
+  padding: inherit;
+  text-decoration: none;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    color: inherit;
+    z-index: inherit;
+  }
 }
