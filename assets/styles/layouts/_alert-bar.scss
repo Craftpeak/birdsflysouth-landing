@@ -7,10 +7,33 @@
 
   .event-link {
     color: $red;
+    display: block;
     text-decoration: none;
+    position: relative;
+    padding: 0 .4rem;
+    transition: $transition-default;
+
+    &:after {
+      background: transparent;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 2px;
+      left: 0;
+      position: absolute;
+      transition: $transition-default;
+      width: 100%;
+    }
 
     &:hover {
-      text-decoration: underline;
+      color: #fff;
+      z-index: 1;
+
+      &:after {
+        background: $red;
+        height: 100%;
+        z-index: -1;
+      }
     }
   }
 
