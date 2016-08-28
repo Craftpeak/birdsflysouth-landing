@@ -2,16 +2,17 @@
   color: $gray-4;
   padding: $space-small;
 
-  a {
+  a:not(.icon-link) {
     color: $gray-3;
     display: inline-block;
-    padding-top: 6px;
+    padding: 6px 6px 0;
     position: relative;
     text-decoration: none;
     transition: $transition-default;
 
     &:after {
       background: $red;
+      border-radius: 2px;
       bottom: 0;
       content: '';
       display: block;
@@ -27,6 +28,7 @@
       z-index: 1;
 
       &:after {
+        background-color: $red-active;
         height: 100%;
         z-index: -1;
       }
