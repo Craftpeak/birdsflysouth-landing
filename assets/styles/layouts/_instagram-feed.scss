@@ -3,16 +3,30 @@
 
   .tiles {
     display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    flex-flow: wrap;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: $transition-default;
+
+    &.loaded {
+      height: auto;
+      opacity: 1;
+    }
 
     .tile {
       align-items: center;
       display: flex;
-      flex: 1;
-      min-height: 100px;
-      min-width: 100px;
+      flex-basis: 50%;
+      flex: flex-basis;
+
+      @include min-screen($screen-tiny-min) {
+        flex-basis: calc(100% / 3);
+      }
+
+      @include min-screen($screen-large-min) {
+        flex-basis: calc(100% / 6);
+      }
 
       img {
         display: block;
