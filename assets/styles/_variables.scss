@@ -34,6 +34,7 @@ $screen-large: 1200px;
 $screen-extra-large: 1600px;
 
 // Min screen sizes
+$screen-tiny-min: ($screen-tiny + 1);
 $screen-medium-min: ($screen-small + 1);
 $screen-large-min: ($screen-medium + 1);
 $screen-extra-large-min: ($screen-large + 1);
