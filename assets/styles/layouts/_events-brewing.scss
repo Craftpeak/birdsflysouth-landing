@@ -10,8 +10,23 @@
     background-position: center;
     background-size: cover;
   }
+
   .brewing {
     background: $gray-5;
+
+    .beers {
+      display: flex;
+      flex-flow: wrap;
+
+      .beer {
+        flex-basis: 50%;
+        padding: $space;
+
+        img {
+          @extend .responsive-image;
+        }
+      }
+    }
   }
 
   @include min-screen($screen-medium-min) {
