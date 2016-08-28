@@ -4,3 +4,6 @@ bower_components
 node_modules
 npm-debug.log
 vendor
+
+# Remove this when going to production
+dist
