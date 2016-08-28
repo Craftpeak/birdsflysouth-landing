@@ -12,11 +12,12 @@ body {
   color: $text-color-base;
   font-family: $font-family-base;
   font-size: 1.8rem;
-  line-height: $line-height-base;
+  line-height: 1.333333333;
   text-align: center;
 
-  @include mq($min-width: $screen-tiny-min) {
+  @include min-screen($screen-tiny-min) {
     font-size: $font-size-base;
+    line-height: $line-height-base;
   }
 }
 
@@ -25,6 +26,7 @@ small {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: $gray-4;
   font-weight: normal;
 }
 
@@ -46,15 +48,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
+ * Misc styles
+ */
+ .screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+ }
+
+.DEV-NOTE {
+  background: #CBEBF4;
+  color: darken(#CBEBF4, 50%);
+  padding: 16px 10px 10px;
+  display: block;
+  font-size: 15px;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+/**
  * Tel links don't get styled
  */
 body a[href^="tel:"] {
-  color: inherit;
-  padding: inherit;
-  text-decoration: none;
+  color: inherit !important;
+  padding: inherit !important;
+  text-decoration: none !important;
 
   &::after {
-    display: none;
+    display: none !important;
   }
 
   &:hover {
