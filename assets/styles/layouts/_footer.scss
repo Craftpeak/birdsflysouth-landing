@@ -33,11 +33,13 @@
       float: right;
     }
     .bird {
-      position: absolute;
+      height: 48px;
       left: 50%;
-      top: 50%;
-      margin-top: -26px;
       margin-left: -28px;
+      margin-top: -26px;
+      position: absolute;
+      top: 50%;
+      width: 57px;
     }
   }
 }

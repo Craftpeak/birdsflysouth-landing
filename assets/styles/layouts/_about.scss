@@ -31,11 +31,13 @@
     .about-photo,
     .about-content {
       flex-basis: 50%;
+      max-width: 50%; // Needed for correct IE display
     }
 
     .about-photo {
-      img {
+      figure {
         float: right;
+        max-width: 600px;
       }
     }
 

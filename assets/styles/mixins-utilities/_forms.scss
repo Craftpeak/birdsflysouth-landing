@@ -20,6 +20,11 @@ form {
     &:focus {
       border-color: $gray-2;
     }
+
+    // Fix IE input text positioning
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      padding: 2px 2rem 0;
+    }
   }
 }
 
