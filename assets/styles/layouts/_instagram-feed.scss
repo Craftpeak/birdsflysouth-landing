@@ -42,8 +42,6 @@
 
       &.instagram {
         @include center-contents();
-        flex: 1;
-        max-width: none;
 
         .logo-instagram,
         .logo-instagram path {
