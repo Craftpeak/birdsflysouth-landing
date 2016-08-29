@@ -33,7 +33,7 @@
     &::after {
       @include min-screen($screen-medium-min) {
         background: url('../images/bg-triangles.png') repeat-y -35px top;
-        background-size: 60px 25px;
+        background-size: 95px 25px;
         content: '';
         height: 100%;
         left: 0;

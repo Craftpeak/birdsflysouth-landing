@@ -9,6 +9,20 @@
     background-image: url('../images/bg-brewery.jpg');
     background-position: center;
     background-size: cover;
+    position: relative;
+
+    &::after {
+      @include min-screen($screen-medium-min) {
+        background: url('../images/bg-triangles.png') repeat-y -70px top;
+        background-size: 95px 25px;
+        content: '';
+        height: 100%;
+        right: 0;
+        position: absolute;
+        top: 0;
+        width: 25px;
+      }
+    }
   }
 
   .brewing {
