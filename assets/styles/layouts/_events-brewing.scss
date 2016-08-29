@@ -29,15 +29,45 @@
     background: $gray-5;
 
     .beers {
-      display: flex;
-      flex-flow: wrap;
+      list-style: none;
+      padding: 0;
 
-      .beer {
-        flex-basis: 50%;
-        padding: $space;
+      li {
+        @include clearfix()
+        margin-bottom: 2rem;
+        position: relative;
+
+        .beer-title {
+          @extend .font-open-sans-condensed;
+          color: $white;
+          letter-spacing: 1px;
+          margin: 0 0 .8rem;
+          text-transform: uppercase;
+        }
+
+        .beer-style {
+          color: $gray-0;
+          font-size: 1.5rem;
+          margin: 0;
+          font-style: italic;
+        }
+
+        .beer-title,
+        .beer-style {
+          text-align: left;
+        }
+
+        &.has-image {
+          .beer-title,
+          .beer-style {
+            width: 75%;
+          }
+        }
 
         img {
           @extend .responsive-image;
+          float: right;
+          width: 20%;
         }
       }
     }
