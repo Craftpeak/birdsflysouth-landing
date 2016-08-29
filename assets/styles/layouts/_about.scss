@@ -12,18 +12,39 @@
     text-align: left;
   }
 
+  @include max-screen($screen-small-max) {
+    .about-photo {
+      padding-bottom: 0;
+    }
+
+    .about-content {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
   @include min-screen($screen-medium-min) {
     display: flex;
+    flex-flow: wrap;
     position: relative;
 
     .about-photo,
     .about-content {
-      width: 50%;
+      flex-basis: 50%;
     }
 
     .about-photo {
       img {
         float: right;
+      }
+    }
+
+    // Remove bottom padding from first photo and content
+    .about-photo:nth-child(1) {
+      padding-bottom: 0;
+
+      + .about-content {
+        padding-bottom: 0;
       }
     }
   }
