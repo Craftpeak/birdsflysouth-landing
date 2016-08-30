@@ -14,8 +14,7 @@ WebFont.load({
  * Load Instagram Tiles
  */
 var loadInstagramTiles = function(container) {
-  // Request URL - PLEASE DON'T USE THIS KEY
-  var requestUrl = 'https://api.instagram.com/v1/users/self/media/recent/?count=5&access_token=307570767.9e0517d.d3e66c1eee404663a44e5068c896e227';
+  var requestUrl = 'https://api.instagram.com/v1/users/self/media/recent/?count=5&access_token=' + accessToken;
 
   $.ajax({
     url: requestUrl,

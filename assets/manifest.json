@@ -2,6 +2,7 @@
   "dependencies": {
     "main.js": {
       "files": [
+        "../private-variables.js",
         "scripts/main.js"
       ],
       "main": true
