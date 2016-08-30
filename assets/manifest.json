@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "../private-variables.js",
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    }
+  }
+}

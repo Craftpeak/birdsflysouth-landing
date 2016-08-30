@@ -1,0 +1,45 @@
+.footer {
+  background: $gray-5;
+  font-size: $font-size-small;
+  padding: $space-medium $space-small;
+
+  .copy, .hashtag {
+    margin-bottom: $space-small;
+  }
+  .copy {}
+  
+  a {
+    color: $gray-2;
+    text-decoration: none;
+    transition: $transition-default;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  @include min-screen($screen-medium-min) {
+    @include clearfix();
+    padding: $space-large;
+    position: relative;
+
+    .copy, .hashtag {
+      margin-bottom: 0;
+    }
+    .copy {
+      float: left;
+    }
+    .hashtag {
+      float: right;
+    }
+    .bird {
+      height: 48px;
+      left: 50%;
+      margin-left: -28px;
+      margin-top: -26px;
+      position: absolute;
+      top: 50%;
+      width: 57px;
+    }
+  }
+}

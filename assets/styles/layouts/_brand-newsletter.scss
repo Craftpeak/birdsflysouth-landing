@@ -1,0 +1,69 @@
+.brand-newsletter {
+  background-image: url('../images/bg-birds.jpg');
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .brand {
+    background: rgba($white, .75);
+
+    .logo-wrap {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: $space-medium;
+
+      .logo {
+        @extend .responsive-image;
+        margin-bottom: $space-medium;
+      }
+
+      .tagline {
+        @include min-screen($screen-large-min) {
+          font-size: 3rem;
+          line-height: 1.333333333;
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    background: $gray-1;
+    position: relative;
+
+    &::after {
+      @include min-screen($screen-medium-min) {
+        background: url('../images/bg-triangles.png') repeat-y -35px top;
+        background-size: 95px 25px;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 25px;
+      }
+    }
+
+    .content-block {
+      margin: 0 auto;
+      max-width: 500px;
+    }
+  }
+
+  @include min-screen($screen-medium-min) {
+    display: flex;
+    position: relative;
+
+    .brand,
+    .newsletter {
+      width: 50%;
+    }
+  }
+  @include min-screen($screen-large-min) {
+    .brand {
+      width: 65%;
+    }
+    .newsletter {
+      width: 35%;
+    }
+  }
+}

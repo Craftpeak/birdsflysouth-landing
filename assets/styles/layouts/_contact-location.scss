@@ -1,0 +1,101 @@
+.contact-location {
+  .contact {
+    background: $gray-1;
+  }
+
+  .location {
+    background: url('../images/bg-map.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &::after {
+      @include min-screen($screen-medium-min) {
+        background: url('../images/bg-triangles.png') repeat-y left top;
+        background-size: 95px 25px;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 25px;
+      }
+    }
+
+    .hours {
+      width: 100%;
+
+      .day {
+        text-align: right;
+      }
+      .seperator {
+        color: $gray-2;
+      }
+      .time {
+        text-align: left;
+      }
+    }
+  }
+
+  .social-links {
+    .icon-link {
+      border-radius: 50%;
+      border: 2px solid $red;
+      display: inline-block;
+      height: 6rem;
+      line-height: 6.6rem;
+      margin: 0 1rem;
+      width: 6rem;
+      transition: $transition-default;
+
+      .icon {
+        fill: $red;
+        transition: $transition-default;
+      }
+
+      &:hover {
+        background-color: $red-active;
+        transform: scale(1.1);
+
+        .icon {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  .bird {
+    display: block;
+    height: 60px;
+    left: 50%;
+    margin-left: -35px;
+    margin-top: -30px;
+    position: absolute;
+    top: 0;
+    width: 71px;
+    z-index: 1;
+  }
+
+  @include min-screen($screen-medium-min) {
+    display: flex;
+    position: relative;
+
+    .contact,
+    .location {
+      width: 50%;
+      flex: 1;
+    }
+
+    .bird {
+      display: block;
+      height: 240px;
+      left: 0;
+      margin-left: -142px;
+      margin-top: -120px;
+      position: absolute;
+      top: 50%;
+      width: 284px;
+      z-index: 1;
+    }
+  }
+}

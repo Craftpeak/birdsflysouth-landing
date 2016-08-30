@@ -1,0 +1,87 @@
+/**
+ * Global Type Styles
+ */
+// Reset HTML
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $text-color-base;
+  font-family: $font-family-base;
+  font-size: 1.8rem;
+  line-height: 1.333333333;
+  text-align: center;
+
+  @include min-screen($screen-tiny-min) {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+}
+
+small {
+  font-size: 85%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $gray-4;
+  font-weight: normal;
+}
+
+/**
+ * Fonts
+ */
+.font-adobe-caslon-pro {
+  font-family: "adobe-caslon-pro";
+}
+.font-open-sans-condensed {
+  font-family: "Open Sans Condensed";
+}
+
+/**
+ * Font Weights
+ */
+.type-semibold {
+  font-weight: 600;
+}
+
+/**
+ * Misc styles
+ */
+ .screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+ }
+
+.DEV-NOTE {
+  background: #CBEBF4;
+  color: darken(#CBEBF4, 50%);
+  padding: 16px 10px 10px;
+  display: block;
+  font-size: 15px;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+/**
+ * Tel links don't get styled
+ */
+body a[href^="tel:"] {
+  color: inherit !important;
+  padding: inherit !important;
+  text-decoration: none !important;
+
+  &::after {
+    display: none !important;
+  }
+
+  &:hover {
+    color: inherit;
+    z-index: inherit;
+  }
+}

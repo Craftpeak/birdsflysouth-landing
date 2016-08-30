@@ -1,0 +1,15 @@
+img {
+  display: inline-block;
+}
+
+.responsive-image {
+  height: auto;
+  max-width: 100%;
+}
+
+// Fix for SVG images not scaling properly
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src$=".svg"] {
+    width: 100%; 
+  }
+}

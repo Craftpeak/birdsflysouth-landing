@@ -1,0 +1,6 @@
+// Use this mixin on a container to center contents
+@mixin center-contents {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

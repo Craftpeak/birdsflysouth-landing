@@ -1,0 +1,53 @@
+.about {
+  background: none;
+
+  .about-photo {
+    @include clearfix();
+
+    img {
+      @extend .responsive-image;
+    }
+  }
+  .about-content {
+    text-align: left;
+  }
+
+  @include max-screen($screen-small-max) {
+    .about-photo {
+      padding-bottom: 0;
+    }
+
+    .about-content {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  @include min-screen($screen-medium-min) {
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+
+    .about-photo,
+    .about-content {
+      flex-basis: 50%;
+      max-width: 50%; // Needed for correct IE display
+    }
+
+    .about-photo {
+      figure {
+        float: right;
+        max-width: 600px;
+      }
+    }
+
+    // Remove bottom padding from first photo and content
+    .about-photo:nth-child(1) {
+      padding-bottom: 0;
+
+      + .about-content {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

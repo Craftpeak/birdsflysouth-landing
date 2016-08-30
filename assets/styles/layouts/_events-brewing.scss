@@ -1,0 +1,89 @@
+.events-brewing {
+  color: white;
+
+  .header {
+    color: white;
+  }
+
+  .events {
+    background-image: url('../images/bg-brewery.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+      @include min-screen($screen-medium-min) {
+        background: url('../images/bg-triangles.png') repeat-y -70px top;
+        background-size: 95px 25px;
+        content: '';
+        height: 100%;
+        right: 0;
+        position: absolute;
+        top: 0;
+        width: 25px;
+      }
+    }
+  }
+
+  .brewing {
+    background: $gray-5;
+
+    .beers {
+      list-style: none;
+      padding: 0;
+
+      li {
+        @include clearfix()
+        margin-bottom: 2rem;
+        position: relative;
+
+        .beer-title {
+          @extend .font-open-sans-condensed;
+          color: $white;
+          letter-spacing: 1px;
+          margin: 0 0 .8rem;
+          text-transform: uppercase;
+        }
+
+        .beer-style {
+          color: $gray-0;
+          font-size: 1.5rem;
+          margin: 0;
+          font-style: italic;
+        }
+
+        .beer-title,
+        .beer-style {
+          text-align: left;
+        }
+
+        &.has-image {
+          .beer-title,
+          .beer-style {
+            width: 75%;
+          }
+        }
+
+        img {
+          @extend .responsive-image;
+          float: right;
+          width: 20%;
+        }
+      }
+    }
+  }
+
+  @include min-screen($screen-medium-min) {
+    display: flex;
+    position: relative;
+
+    .events,
+    .brewing {
+      width: 50%;
+      flex: 1;
+    }
+    .events {
+      background-position: left center;
+    }
+  }
+}

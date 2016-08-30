@@ -1,0 +1,63 @@
+.instagram-feed {
+  background: $gray-5;
+
+  .tiles {
+    display: flex;
+    flex-flow: wrap;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: $transition-default;
+
+    &.loaded {
+      height: auto;
+      opacity: 1;
+    }
+
+    .tile {
+      align-items: center;
+      display: flex;
+      flex-basis: 50%;
+      flex: flex-basis;
+
+      @include min-screen($screen-tiny-min) {
+        flex-basis: calc(100% / 3);
+      }
+
+      @include min-screen($screen-large-min) {
+        flex-basis: calc(100% / 6);
+      }
+
+      img {
+        display: block;
+        height: auto;
+        transition: $transition-default;
+        backface-visibility: hidden;
+        width: 100%;
+
+        &:hover {
+          opacity: .5;
+        }
+      }
+
+      &.instagram {
+        @include center-contents();
+
+        .logo-instagram,
+        .logo-instagram path {
+          transition: $transition-default;
+        }
+
+        &:hover {
+          .logo-instagram {
+            transform: scale(1.1);
+
+            path {
+              fill: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

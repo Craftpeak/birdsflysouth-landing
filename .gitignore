@@ -5,5 +5,5 @@ node_modules
 npm-debug.log
 vendor
 
-# Remove this when going to production
-dist
+# Private Variables
+private-variables.js

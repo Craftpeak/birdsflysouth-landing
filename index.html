@@ -4,53 +4,290 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Birds Fly South Ale Project</title>
-    <meta name="description" content="Website for the Birds Fly South Ale Project, Grand Opening September 1st, 2016!">
+    <meta name="description" content="Birds Fly South is a Greenville, SC wild ale brewery utilizing open fermentation, Solera blending and wood barreling to produce authentic Saisons and Sours.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-    /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+    <link rel="shortcut icon" href="dist/images/site-icon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="dist/images/site-icon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="dist/images/site-icon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="dist/images/site-icon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="dist/images/site-icon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="dist/images/site-icon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="dist/images/site-icon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="dist/images/site-icon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/images/site-icon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/site-icon/apple-touch-icon-180x180.png" />
 
-    /* Site Styles */
-    body {
-      font-family: "arial", sans-serif;
-    }
-    .wrapper {
-      align-items: center;
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-    }
-    .main {
-      max-width: 600px;
-      text-align: center;
-    }
-    .logo {
-      height: auto;
-      width: 100%;
-    }
-    .info {
-      padding: 0 10px 10px;
-    }
-    a {
-      color: #139bab;
-    }
-    </style>
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="dist/styles/main.css">
   </head>
   <body>
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=2094494020774999";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Site Wrapper -->
     <div class="wrapper">
+      <header class="alert-bar">
+        <a href="https://www.facebook.com/events/1139233116089963/" class="event-link" rel="external">Join us for our grand opening Thursday, September 1 at 4pm</a>
+      </header>
       <main class="main">
-        <img src="logo.jpg" alt="Birds Fly South Ale Project Logo" class="logo">
-        <a class="info" href="https://www.facebook.com/events/1139233116089963/">Grand Opening September 1st, 2016</a>
+        <section class="brand-newsletter">
+          <div class="brand content-box">
+            <div class="logo-wrap">
+              <img class="logo" src="dist/images/logo.svg" alt="Birds Fly Routh Logo">
+              <br>
+              <em class="tagline">Progressively Old School<br>Urban Farmhouse Brewing</em>
+            </div>
+          </div>
+
+          <div class="newsletter content-box">
+            <h2>Join the Flock</h2>
+            <div class="content-block">
+              <p>Be the first to know about events, bottle releases and other killer stuff.</p>
+            </div>
+            <div class="content-block">
+              <!-- MailChimp Signup Form -->
+              <div id="mc_embed_signup">
+                <form action="//bfsbeer.us14.list-manage.com/subscribe/post?u=e15cccc6e1c9b5a6701df868b&amp;id=6b3f7717b6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div class="mc-field-group">
+                    <!-- <label for="mce-EMAIL">Email Address </label> -->
+                    <input type="email" value="" name="FNAME" class="required" id="mce-FNAME" placeholder="First Name">
+                  </div>
+                  <div class="mc-field-group">
+                    <!-- <label for="mce-FNAME">First Name </label> -->
+                    <input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+                  </div>
+
+                  <div id="mce-responses">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_b131e137cbc13c16c12fec44d_f69ee7c9e9" tabindex="-1" value="">
+                  </div>
+
+                  <div class="mc-field-group">
+                    <button type="submit" value="Sign up" class="button">Sign up</button>
+                  </div>
+                </form>
+              </div>
+              <!-- / MailChimp Signup Form -->
+            </div>
+          </div>
+        </section>
+        <section class="instagram-feed">
+          <div class="tiles">
+            <a href="https://www.instagram.com/bfsbeer/" class="tile instagram" rel="external">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="logo-instagram">>
+                <path fill="#AFAFAF" fill-rule="evenodd" d="M120.000048,96 C113.481991,96 112.664686,96.0276278 110.104926,96.1444265 C107.550311,96.2609395 105.80576,96.6666865 104.279088,97.2599213 C102.700876,97.8732576 101.362454,98.6938975 100.028223,100.028128 C98.6939927,101.362454 97.8733529,102.700876 97.2600166,104.279088 C96.6666865,105.805665 96.2610347,107.550311 96.1444265,110.104831 C96.0276278,112.664686 96,113.481991 96,120.000048 C96,126.518009 96.0276278,127.335314 96.1444265,129.895169 C96.2610347,132.449689 96.6666865,134.194335 97.2600166,135.720912 C97.8733529,137.299124 98.6939927,138.637546 100.028223,139.971872 C101.362454,141.306103 102.700876,142.126742 104.279088,142.740079 C105.80576,143.333313 107.550311,143.739061 110.104926,143.855573 C112.664686,143.972468 113.481991,144 120.000048,144 C126.518104,144 127.335314,143.972468 129.895169,143.855573 C132.449785,143.739061 134.194335,143.333313 135.721007,142.740079 C137.299219,142.126742 138.637642,141.306103 139.971872,139.971872 C141.306103,138.637546 142.126742,137.299124 142.740079,135.720912 C143.333409,134.194335 143.739061,132.449689 143.855669,129.895169 C143.972468,127.335314 144,126.518009 144,120.000048 C144,113.481991 143.972468,112.664686 143.855669,110.104831 C143.739061,107.550311 143.333409,105.805665 142.740079,104.279088 C142.126742,102.700876 141.306103,101.362454 139.971872,100.028128 C138.637642,98.6938975 137.299219,97.8732576 135.721007,97.2599213 C134.194335,96.6666865 132.449785,96.2609395 129.895169,96.1444265 C127.335314,96.0276278 126.518104,96 120.000048,96 M120.000048,100.324317 C126.408355,100.324317 127.167356,100.348801 129.69806,100.464266 C132.038036,100.570966 133.308818,100.961946 134.154608,101.290621 C135.274771,101.725997 136.074357,102.246066 136.914146,103.08595 C137.753934,103.925738 138.274098,104.725229 138.709379,105.845487 C139.038054,106.691182 139.429034,107.961964 139.53583,110.30194 C139.651295,112.832644 139.675683,113.59174 139.675683,120.000048 C139.675683,126.40826 139.651295,127.167356 139.53583,129.69806 C139.429034,132.038036 139.038054,133.308818 138.709379,134.154513 C138.274098,135.274771 137.753934,136.074262 136.914146,136.91405 C136.074357,137.753934 135.274771,138.274003 134.154608,138.709379 C133.308818,139.038054 132.038036,139.429034 129.69806,139.535734 C127.167737,139.651199 126.408736,139.675683 120.000048,139.675683 C113.591359,139.675683 112.832358,139.651199 110.302036,139.535734 C107.962059,139.429034 106.691182,139.038054 105.845487,138.709379 C104.725324,138.274003 103.925738,137.753934 103.08595,136.91405 C102.246161,136.074262 101.725997,135.274771 101.290621,134.154513 C100.962042,133.308818 100.571061,132.038036 100.464266,129.69806 C100.348801,127.167356 100.324412,126.40826 100.324412,120.000048 C100.324412,113.59174 100.348801,112.832644 100.464266,110.30194 C100.571061,107.961964 100.962042,106.691182 101.290621,105.845487 C101.725997,104.725229 102.246161,103.925738 103.08595,103.08595 C103.925738,102.246066 104.725324,101.725997 105.845487,101.290621 C106.691182,100.961946 107.962059,100.570966 110.30194,100.464266 C112.832739,100.348801 113.59174,100.324317 120.000048,100.324317 Z M120.000048,107.675683 C113.193519,107.675683 107.675683,113.193424 107.675683,120.000048 C107.675683,126.806576 113.193519,132.324317 120.000048,132.324317 C126.806576,132.324317 132.324412,126.806576 132.324412,120.000048 C132.324412,113.193424 126.806576,107.675683 120.000048,107.675683 Z M120.000048,128 C115.581797,128 112,124.418299 112,120.000048 C112,115.581701 115.581797,112 120.000048,112 C124.418299,112 128,115.581701 128,120.000048 C128,124.418299 124.418299,128 120.000048,128 Z M135.691312,107.188739 C135.691312,108.779336 134.401858,110.068695 132.811356,110.068695 C131.220759,110.068695 129.931305,108.779336 129.931305,107.188739 C129.931305,105.598142 131.220759,104.308783 132.811356,104.308783 C134.401858,104.308783 135.691312,105.598142 135.691312,107.188739 Z" transform="translate(-96 -96)"/>
+              </svg>
+            </a>
+          </div>
+        </section>
+        <section class="contact-location">
+          <div class="contact content-box">
+            <div class="content-block">
+              <h3 class="heading">Contact</h3>
+              <div class="phone">
+                <a href="tel:+18644128825">
+                  (864) 412-8825
+                </a>
+              </div>
+              <div class="email">
+                <a href="mailto:bfsbeer@gmail.com" target="_blank">bfsbeer@gmail.com</a>
+              </div>
+            </div>
+            <div class="content-block last">
+              <h3 class="heading">Follow Us</h3>
+
+              <div class="social-links">
+                <a href="https://www.facebook.com/bfsbeer/" class="icon-link" rel="external">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" class="icon">
+                    <path fill="inherit" fill-rule="evenodd" d="M104.981035,3230.00335 C105.081482,3230.02344 105.191973,3230.00335 105.282375,3229.94308 C105.372777,3229.88282 105.433045,3229.78237 105.443089,3229.68192 L105.714295,3227.72322 C105.734384,3227.54241 105.623893,3227.35156 105.433045,3227.30134 C104.729919,3227.10045 103.966525,3227 103.172997,3227 C100.772325,3227 99.6071448,3228.14509 99.6071448,3230.51563 L99.6071448,3231.55023 L98.3816969,3231.55023 C98.1707591,3231.55023 98,3231.72099 98,3231.93193 L98,3233.94086 C98,3234.16184 98.1707591,3234.3326 98.3816969,3234.3326 L99.6071448,3234.3326 L99.6071448,3242.04689 C99.6071448,3242.25783 99.7779039,3242.42859 99.9888417,3242.42859 L102.500005,3242.42859 C102.700898,3242.42859 102.871658,3242.25783 102.871658,3242.04689 L102.871658,3234.3326 L104.900678,3234.3326 C105.101571,3234.3326 105.262285,3234.17188 105.282375,3233.97099 L105.423,3231.96206 C105.433045,3231.85157 105.392866,3231.75112 105.322553,3231.67076 C105.252241,3231.59041 105.151794,3231.55023 105.051348,3231.55023 L102.871658,3231.55023 L102.871658,3230.6663 C102.871658,3230.00335 102.94197,3229.84264 103.625007,3229.84264 C104.016748,3229.84264 104.549115,3229.91295 104.981035,3230.00335 Z" transform="translate(-98 -3227)"/>
+                  </svg>
+                  <span class="screen-reader-text">Facebook</span>
+                </a>
+
+                <a href="https://twitter.com/bfsbeer" class="icon-link" rel="external">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" class="icon">
+                    <path fill="inherit" fill-rule="evenodd" d="M189.648455,3230.60938 C189.648455,3230.47656 189.53908,3230.35938 189.398455,3230.35938 C189.32033,3230.35938 188.781266,3230.58594 188.640641,3230.625 C188.828141,3230.40625 189.257829,3229.74219 189.257829,3229.46094 C189.257829,3229.32813 189.148454,3229.21094 189.007829,3229.21094 C188.968767,3229.21094 188.921892,3229.22656 188.882829,3229.25 C188.351578,3229.53906 187.843765,3229.76563 187.250015,3229.89063 C186.664076,3229.32813 185.8672,3229 185.046887,3229 C183.31251,3229 181.890633,3230.41406 181.890633,3232.15625 C181.890633,3232.28125 181.898446,3232.41407 181.921883,3232.53907 C180.203131,3232.39063 178.570317,3231.67188 177.289065,3230.52344 C176.976565,3230.24219 176.71094,3229.9375 176.429689,3229.625 C176.367189,3229.55469 176.312502,3229.53125 176.218751,3229.53125 C176.132814,3229.53125 176.062501,3229.59375 176.023439,3229.65625 C175.742188,3230.07031 175.593751,3230.74219 175.593751,3231.24219 C175.593751,3231.96875 175.843751,3232.67969 176.312502,3233.24219 C176.164064,3233.19532 175.937501,3233.04688 175.804688,3233.04688 C175.640626,3233.04688 175.500001,3233.16407 175.500001,3233.32813 C175.500001,3234.42188 176.101564,3235.43751 177.02344,3236.00782 C176.953127,3236.00001 176.890627,3235.97657 176.820315,3235.97657 C176.687502,3235.97657 176.578127,3236.09376 176.578127,3236.21876 C176.578127,3236.25001 176.585939,3236.27345 176.593752,3236.3047 C176.937502,3237.35938 177.796878,3238.15626 178.875005,3238.40626 C177.992191,3238.95314 176.976565,3239.23439 175.945314,3239.23439 C175.710938,3239.23439 175.476563,3239.19532 175.25,3239.19532 C175.109375,3239.19532 175,3239.31251 175,3239.44532 C175,3239.53126 175.046875,3239.60158 175.117188,3239.65626 C175.320313,3239.8047 175.570313,3239.9297 175.796876,3240.04689 C177.000002,3240.67189 178.343754,3241.00001 179.703131,3241.00001 C183.109385,3241.00001 186.023451,3239.17189 187.429702,3236.06251 C187.937515,3234.94532 188.234391,3233.71876 188.210953,3232.49219 L188.210953,3232.23438 C188.742204,3231.83594 189.257829,3231.32032 189.609392,3230.75 C189.63283,3230.71094 189.648455,3230.66406 189.648455,3230.60938 L189.648455,3230.60938 Z" transform="translate(-175 -3229)"/>
+                  </svg>
+                  <span class="screen-reader-text">Facebook</span>
+                </a>
+
+                <a href="https://www.instagram.com/bfsbeer/" class="icon-link" rel="external">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" class="icon">
+                    <path fill="inherit" fill-rule="evenodd" d="M262.500015,3228 C260.463122,3228 260.207714,3228.00863 259.407789,3228.04513 C258.609472,3228.08154 258.0643,3228.20834 257.587215,3228.39373 C257.094024,3228.58539 256.675767,3228.84184 256.25882,3229.25879 C255.841873,3229.67577 255.585423,3230.09402 255.393755,3230.58722 C255.20834,3231.06427 255.081573,3231.60947 255.045133,3232.40776 C255.008634,3233.20771 255,3233.46312 255,3235.50001 C255,3237.53688 255.008634,3237.79229 255.045133,3238.59224 C255.081573,3239.39053 255.20834,3239.93573 255.393755,3240.41278 C255.585423,3240.90598 255.841873,3241.32423 256.25882,3241.74121 C256.675767,3242.15816 257.094024,3242.41461 257.587215,3242.60627 C258.0643,3242.79166 258.609472,3242.91846 259.407789,3242.95487 C260.207714,3242.9914 260.463122,3243 262.500015,3243 C264.536907,3243 264.792286,3242.9914 265.59224,3242.95487 C266.390558,3242.91846 266.93573,3242.79166 267.412815,3242.60627 C267.906006,3242.41461 268.324263,3242.15816 268.74121,3241.74121 C269.158157,3241.32423 269.414607,3240.90598 269.606275,3240.41278 C269.79169,3239.93573 269.918456,3239.39053 269.954896,3238.59224 C269.991396,3237.79229 270,3237.53688 270,3235.50001 C270,3233.46312 269.991396,3233.20771 269.954896,3232.40776 C269.918456,3231.60947 269.79169,3231.06427 269.606275,3230.58722 C269.414607,3230.09402 269.158157,3229.67577 268.74121,3229.25879 C268.324263,3228.84184 267.906006,3228.58539 267.412815,3228.39373 C266.93573,3228.20834 266.390558,3228.08154 265.59224,3228.04513 C264.792286,3228.00863 264.536907,3228 262.500015,3228 M262.500015,3229.35135 C264.502611,3229.35135 264.739799,3229.359 265.530644,3229.39508 C266.261886,3229.42843 266.659006,3229.55061 266.923315,3229.65332 C267.273366,3229.78937 267.523236,3229.9519 267.78567,3230.21436 C268.048104,3230.47679 268.210656,3230.72663 268.346681,3231.07671 C268.449392,3231.34099 268.571573,3231.73811 268.604947,3232.46936 C268.64103,3233.2602 268.648651,3233.49742 268.648651,3235.50001 C268.648651,3237.50258 268.64103,3237.7398 268.604947,3238.53064 C268.571573,3239.26189 268.449392,3239.65901 268.346681,3239.92329 C268.210656,3240.27337 268.048104,3240.52321 267.78567,3240.78564 C267.523236,3241.0481 267.273366,3241.21063 266.923315,3241.34668 C266.659006,3241.44939 266.261886,3241.57157 265.530644,3241.60492 C264.739918,3241.641 264.50273,3241.64865 262.500015,3241.64865 C260.4973,3241.64865 260.260112,3241.641 259.469386,3241.60492 C258.738144,3241.57157 258.340994,3241.44939 258.076715,3241.34668 C257.726664,3241.21063 257.476793,3241.0481 257.214359,3240.78564 C256.951925,3240.52321 256.789374,3240.27337 256.653319,3239.92329 C256.550638,3239.65901 256.428457,3239.26189 256.395083,3238.53064 C256.359,3237.7398 256.351379,3237.50258 256.351379,3235.50001 C256.351379,3233.49742 256.359,3233.2602 256.395083,3232.46936 C256.428457,3231.73811 256.550638,3231.34099 256.653319,3231.07671 C256.789374,3230.72663 256.951925,3230.47679 257.214359,3230.21436 C257.476793,3229.9519 257.726664,3229.78937 258.076715,3229.65332 C258.340994,3229.55061 258.738144,3229.42843 259.469356,3229.39508 C260.260231,3229.359 260.497419,3229.35135 262.500015,3229.35135 Z M262.500015,3231.64865 C260.372975,3231.64865 258.648651,3233.37295 258.648651,3235.50001 C258.648651,3237.62705 260.372975,3239.35135 262.500015,3239.35135 C264.627055,3239.35135 266.351379,3237.62705 266.351379,3235.50001 C266.351379,3233.37295 264.627055,3231.64865 262.500015,3231.64865 Z M262.500015,3238 C261.119311,3238 260,3236.88072 260,3235.50001 C260,3234.11928 261.119311,3233 262.500015,3233 C263.880718,3233 265,3234.11928 265,3235.50001 C265,3236.88072 263.880718,3238 262.500015,3238 Z M267.403535,3231.49648 C267.403535,3231.99354 267.000581,3232.39647 266.503549,3232.39647 C266.006487,3232.39647 265.603533,3231.99354 265.603533,3231.49648 C265.603533,3230.99942 266.006487,3230.59649 266.503549,3230.59649 C267.000581,3230.59649 267.403535,3230.99942 267.403535,3231.49648 Z" transform="translate(-255 -3228)"/>
+                  </svg>
+                  <span class="screen-reader-text">Facebook</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="location content-box">
+            <div class="content-block">
+              <h3 class="heading">Location</h3>
+              <div class="address">
+                1320 Hampton Ave Ext<br>
+                Greenville, SC 29601<br>
+                <small><a href="https://goo.gl/maps/gRkGZtk9XSr" rel="external">Get Directions</a></small>
+              </div>
+            </div>
+            <div class="content-block last">
+              <h3 class="heading">Tasting Room Hours</h3>
+              <table class="hours">
+                <tr>
+                  <td class="day">Thursday</td>
+                  <td class="seperator">...........</td>
+                  <td class="time">4 - 8pm</td>
+                </tr>
+                <tr>
+                  <td class="day">Friday</td>
+                  <td class="seperator">...........</td>
+                  <td class="time">4 - 9pm</td>
+                </tr>
+                <tr>
+                  <td class="day">Saturday</td>
+                  <td class="seperator">...........</td>
+                  <td class="time">Noon - 9pm</td>
+                </tr>
+                <tr>
+                  <td class="day">Sun to Wed</td>
+                  <td class="seperator">...........</td>
+                  <td class="time">Brewing only</td>
+                </tr>
+              </table>
+            </div>
+            <img src="dist/images/bird.svg" class="bird">
+          </div>
+        </section>
+        <section class="events-brewing">
+          <div class="events content-box">
+            <h2 class="header">Upcoming Events</h2>
+
+            <div class="fb-page" data-href="https://www.facebook.com/bfsbeer/" data-tabs="events" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-width="500" data-height="700"></div>
+          </div>
+          <div class="brewing content-box">
+            <h2 class="header">What's Brewing?</h2>
+
+            <ul class="beers">
+              <li class="has-image">
+                <img src="dist/images/beers/brand-new-eyes.jpg" alt="Brand New Eyes">
+                <h4 class="beer-title">Brand New Eyes</h4>
+                <h5 class="beer-style">Farmhouse Ale with Motueka Hops</h5>
+              </li>
+
+              <li class="has-image">
+                <img src="dist/images/beers/rustic-sunday.jpg" alt="Rustic Sunday">
+                <h4 class="beer-title">Rustic Sunday</h4>
+                <h5 class="beer-style">Rye Farmhouse Ale with Hallertau Blanc Hops</h5>
+              </li>
+
+              <li class="has-image">
+                <img src="dist/images/beers/rumblefish.jpg" alt="Rumblefish">
+                <h4 class="beer-title">Rumblefish</h4>
+                <h5 class="beer-style">Tropically Inspired Farmhouse Ale</h5>
+              </li>
+
+              <li class="has-image">
+                <img src="dist/images/beers/paper-airplanes.jpg" alt="Paper Airplanes">
+                <h4 class="beer-title">Paper Airplanes</h4>
+                <h5 class="beer-style">Foudre Blended Brett Pale Ale</h5>
+              </li>
+
+              <li>
+                <h4 class="beer-title">Eldorado Saison</h4>
+              </li>
+
+              <li>
+                <h4 class="beer-title">Galaxy Saison</h4>
+              </li>
+
+              <li>
+                <h4 class="beer-title">Blackberry D’or Golden Sour</h4>
+              </li>
+
+              <li>
+                <h4 class="beer-title">Kölschbier</h4>
+              </li>
+              <li>
+                <h4 class="beer-title">Common Beer California Lager</h4>
+              </li>
+              <li>
+                <h4 class="beer-title">1320 Hampton Ave Double IPA</h4>
+              </li>
+              <li>
+                <h4 class="beer-title">And many more...</h4>
+            </li></
+            ul>
+          </div>
+        </section>
+        <div class="bg-birds">
+          <section class="about">
+            <div class="about-photo content-box">
+              <figure>
+                <img src="dist/images/birds-fly-south-shawn-and-lindsay.jpg" alt="Birds Fly South Shawn and Lindsay Johnson">
+                <figcaption>Shawn &amp; Lindsay Johnson</figcaption>
+              </figure>
+            </div>
+
+            <div class="about-content content-box">
+              <h2>Progressively Old School</h2>
+              <p>We make slow beer with a throwback approach. Through a combination of time-tested brewing/blending methods and modern practices we create beer that is complex, thought-provoking, and above all delicious.</p>
+              <h2>An Ale Project</h2>
+              <p>We focus on Farmhouse Saisons and Sour beers. With each barrel, puncheon, and foudre, our beers develop their own sassiness - their own mind. I like to say “we don’t make beer, we wait for the beer to tell us what it wants to be”.</p>
+              <h2>Rooted in Family</h2>
+              <p>The name “Birds Fly South” is a Johnson family inside joke. For the last 22 years we lived the Coast Guard life, migrating across the country &ndash; A flock of birds always trying to head back down south.</p>
+            </div>
+
+            <div class="about-photo content-box">
+              <figure>
+                <img src="dist/images/birds-fly-south-tasting-room.jpg" alt="Birds Fly South Tasting Room">
+                <figcaption>Birds Fly South Tasting Room</figcaption>
+              </figure>
+            </div>
+
+            <div class="about-content content-box">
+              <h2>The Tasting Room</h2>
+              <p>Our beer is best experienced with other people. The tasting room is designed to inspire conversation, exploration, and sharing.</p>
+              <p>Our “urban farmhouse”, located in Greenville’s West End Water Tower District, hosts a stand up bar, live music, outdoor patio, and rotating food trucks.</p>
+              <p>We invite you to come by, try something new, and spend a relaxed afternoon among friends.</p>
+              <p><em>- <br>Shawn Johnson - Head Brewer</em></p>
+            </div>
+          </section>
+          <section class="new-site">
+            <div class="text">Look for our new website coming this December</div>
+          </section>
+        </div>
       </main>
+      <footer class="footer">
+        <div class="copy">
+          &copy; 2016 Birds Fly South Ale Project
+        </div>
+        <div class="hashtag">
+          <a href="https://www.instagram.com/bfsbeer/" class="tile instagram" rel="external">#ProgressivelyOldSchool</a>
+        </div>
+        <img class="bird" src="dist/images/bird-small.svg" alt="BFS Bird">
+      </footer>
     </div>
 
-    <script type='application/ld+json'> 
+    <!-- Schema -->
+    <script type='application/ld+json'>
     {
       "@context": "http://www.schema.org",
       "@type": "Brewery",
       "name": "Birds Fly South Ale Project",
       "url": "http://bfsbeer.com",
-      "logo": "http://bfsbeer.com/logo.jpg",
+      "logo": "http://bfsbeer.com/assets/images/logo.jpg",
       "description": "Progressively Old School Urban Farmhouse Brewing",
       "address": {
         "@type": "PostalAddress",
@@ -68,6 +305,9 @@
       }
     }
     </script>
+
+    <!-- Site JS -->
+    <script src="dist/scripts/main.js"></script>
 
     <script>
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;

@@ -1,0 +1,51 @@
+.alert-bar {
+  @extend .type-semibold;
+  @include center-contents();
+  background: $gray-5;
+  height: $alert-bar-height;
+  padding: $space-small;
+
+  .event-link {
+    color: $red;
+    display: block;
+    font-size: $font-size-small;
+    max-width: 30rem;
+    padding: 6px 8px 0;
+    position: relative;
+    text-decoration: none;
+    transition: $transition-default;
+
+    @include min-screen($screen-tiny-min) {
+      font-size: $font-size-base;
+      max-width: 100%;
+    }
+
+    &:after {
+      background: transparent;
+      border-radius: 2px;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 2px;
+      left: 0;
+      position: absolute;
+      transition: $transition-default;
+      width: 100%;
+    }
+
+    &:hover {
+      color: #fff;
+      z-index: 1;
+
+      &:after {
+        background: $red-active;
+        height: 100%;
+        z-index: -1;
+      }
+    }
+  }
+
+  @include min-screen($screen-medium-min) {
+    height: $alert-bar-height-medium;
+  }
+}
