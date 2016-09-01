@@ -3,10 +3,9 @@
   font-size: $font-size-small;
   padding: $space-medium $space-small;
 
-  .copy, .hashtag {
+  .copy, .attribution {
     margin-bottom: $space-small;
   }
-  .copy {}
   
   a {
     color: $gray-2;
@@ -20,16 +19,17 @@
 
   @include min-screen($screen-medium-min) {
     @include clearfix();
-    padding: $space-large;
+    padding: $space-extra-large $space-large;
     position: relative;
 
-    .copy, .hashtag {
+    .copy, .attribution {
       margin-bottom: 0;
     }
     .copy {
       float: left;
+      text-align: left;
     }
-    .hashtag {
+    .attribution {
       float: right;
     }
     .bird {
