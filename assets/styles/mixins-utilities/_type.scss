@@ -69,8 +69,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
- * Tel links don't get styled
+ * Some links don't get styled
  */
+.link-plain {
+  color: inherit !important;
+  text-decoration: none !important;
+
+  &::after {
+    display: none !important;
+  }
+
+  &:hover {
+    color: inherit;
+    z-index: inherit;
+  }
+}
+
 body a[href^="tel:"] {
   color: inherit !important;
   padding: inherit !important;
